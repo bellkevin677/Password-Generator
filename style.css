@@ -1,0 +1,77 @@
+* {
+    /* Includes the padding border when setting a width or height */
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(27, 43, 61);
+    color: #eef1ef;
+    font-family: 'Open Sans', sans-serif;
+    /* flex used to center div in body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Setting height so div will be centered vertically */
+    height: 100vh;
+    /* Keeps container off of edge at smaller screeen sizes */
+    padding: 25px;
+}
+
+h2 {
+    /* Top Right/Left Bottom */
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    background: rgb(116, 27, 27);
+    padding: 15px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.result-container {
+    background: rgb(34, 31, 31);
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* position clipboard button */
+    position: relative;
+}
+
+.btn {
+    background: rgb(87, 85, 85);
+    border: none;
+    color: #eef1ef;
+    /* changes cursor when hover over btn */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.setting {
+    display: flex;
+    /* gets check boxes away from text */
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#clipboard {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+}
+
+@media (max-width: 400px){
+    .result-container {
+        font-size: 14px;
+    }
+}
